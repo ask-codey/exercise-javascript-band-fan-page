@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Midnight Owls</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/owl-logo.svg" alt="The Midnight Owls logo: an owl's face under a crescent moon">
+    <h1>The Midnight Owls</h1>
+    <p class="tagline">Indie rock for people who stay up too late.</p>
+    <nav>
+      <a href="#members">The band</a>
+      <a href="#tour">Tour dates</a>
+      <a href="#setlist">Setlist</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="members">
+      <h2>The band</h2>
+      <ul>
+        <li class="member"><span class="member-name">Juno Reyes</span>, vocals and guitar</li>
+        <li class="member"><span class="member-name">Theo Marsh</span>, bass</li>
+        <li class="member"><span class="member-name">Priya Lund</span>, drums</li>
+        <li class="member"><span class="member-name">Sam Okafor</span>, keys</li>
+      </ul>
+    </section>
+
+    <section id="tour">
+      <h2>Tour dates</h2>
+      <p id="show-count">Counting the shows...</p>
+      <ul id="tour-list">
+        <li id="tour-loading">Loading tour dates...</li>
+      </ul>
+    </section>
+
+    <section id="setlist">
+      <h2>Last night's setlist</h2>
+      <ol>
+        <li>Streetlight Serenade</li>
+        <li>Coffee at 3 AM</li>
+        <li>Paper Moon Parade</li>
+        <li class="extra-song hidden">Owl Eyes</li>
+        <li class="extra-song hidden">Last Bus Home</li>
+        <li class="extra-song hidden">Night Shift Lullaby</li>
+      </ol>
+      <button id="show-more" type="button">Show more</button>
+    </section>
+
+    <section id="newsletter">
+      <h2>Never miss a show</h2>
+      <form id="newsletter-form">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@example.com">
+        <button type="submit">Sign up</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>The Midnight Owls are a made-up band, for practice.</p>
+  </footer>
+
+  <script type="module" src="setlist.js"></script>
+  <script type="module" src="fan-page.js"></script>
+</body>
+</html>

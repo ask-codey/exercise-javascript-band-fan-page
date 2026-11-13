@@ -1,0 +1,100 @@
+/* The Midnight Owls fan page. Ready to use: you don't need to change this file. */
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #1d1b2f;
+  background-color: #f4f2fb;
+}
+
+header {
+  padding: 24px 16px;
+  text-align: center;
+  color: #f4f2fb;
+  background-color: #1d1b2f;
+}
+
+.logo {
+  width: 96px;
+  height: 96px;
+}
+
+h1 {
+  margin: 8px 0 0;
+  font-size: 2.5rem;
+}
+
+.tagline {
+  margin-top: 0;
+  font-style: italic;
+}
+
+nav a {
+  margin: 0 8px;
+  color: #ffd166;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 16px 32px;
+}
+
+section {
+  margin-top: 32px;
+}
+
+.member-name {
+  font-weight: bold;
+}
+
+#tour-list li {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-left: 4px solid #6c5ce7;
+  background-color: #ffffff;
+}
+
+/* A show with no tickets left: grayed out. The words "(sold out)" say it too, so the meaning
+   doesn't depend on the color. */
+#tour-list li.sold-out {
+  color: #6b6b6b;
+  border-left-color: #b8b8b8;
+  background-color: #ececec;
+}
+
+/* The very next show on the tour (the stretch goal in README.md). */
+#tour-list li.next-show {
+  font-weight: bold;
+  border-left-color: #ffd166;
+}
+
+#tour-list li.next-show::before {
+  content: "Next up: ";
+}
+
+/* Anything with the class hidden isn't shown at all. */
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 8px 16px;
+  font: inherit;
+  color: #f4f2fb;
+  background-color: #6c5ce7;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+}
+
+footer {
+  padding: 16px;
+  text-align: center;
+  font-size: 0.875rem;
+}
